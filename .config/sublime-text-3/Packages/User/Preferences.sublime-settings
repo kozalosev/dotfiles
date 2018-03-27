@@ -1,0 +1,14 @@
+{
+  "auto_complete_cycle": true,
+  "auto_find_in_selection": true,
+  "color_scheme": "Packages/Darkula Color Scheme/darkula.tmTheme",
+  "dictionary": "Packages/User/Russian.dic",
+  "drag_text": false,
+  "fallback_encoding": "Cyrillic (Windows 1251)",
+  "ignored_packages": [],
+  "rulers": [120],
+  "show_encoding": true,
+  "show_line_endings": true,
+  "theme": "Material-Theme.sublime-theme",
+  "translate_tabs_to_spaces": true
+}

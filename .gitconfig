@@ -1,0 +1,8 @@
+[user]
+	name = Leonid Kozarin
+	email = kozalo@sadbot.ru
+[core]
+	autocrlf = input
+	editor = vim
+[push]
+	default = simple

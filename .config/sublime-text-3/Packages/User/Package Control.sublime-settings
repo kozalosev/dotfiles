@@ -1,0 +1,22 @@
+{
+	"bootstrapped": true,
+	"in_process_packages": [],
+	"installed_packages": [
+		"A File Icon",
+		"AvrAssembler",
+		"BracketHighlighter",
+		"Darkula Color Scheme",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"Kotlin",
+		"Markdown Preview",
+		"Material Theme",
+		"Open Folder",
+		"Package Control",
+		"Renpy Language",
+		"RulerColumn",
+		"SublimeCodeIntel",
+		"x86 and x86_64 Assembly"
+	]
+}

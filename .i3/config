@@ -229,7 +229,7 @@ bindsym --release $mod+Shift+Print exec --no-startup-id shutter -s
 ### Workspace assignments ###
 
 assign [class="Mate-terminal"] $ws_terminals
-assign [class="Chromium-browser"] $ws_chromium
+assign [class="Chromium"] $ws_chromium
 assign [class="TelegramDesktop"] $ws_telegram
 assign [class="VK"] $ws_vk
 
@@ -280,7 +280,9 @@ exec --no-startup-id yandex-disk start           # Cloud file storage
 exec --no-startup-id dropbox                     # Ditto
 
 # Autostart foreground applications
-exec "i3-sensible-terminal -e $SHELL -c 'todol && exec $SHELL'"    # Terminal with a list of current tasks
+exec i3-sensible-terminal
+# TODO: Replace the previous line with the following when "todol" will be more stable.
+#exec "i3-sensible-terminal -e $SHELL -c 'todol && exec $SHELL'"    # Terminal with a list of current tasks
 exec chromium    # Web browser
 exec telegram    # Messenger
 exec vk          # Ditto

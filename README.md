@@ -72,8 +72,10 @@ git reset --hard
 rm -rf ~/tmp
 ```
 
-If you don't need the whole content of the repository, you're able to take only some of the configuration files and
-install only software by your choice.
+The last thing you need to do is to execute the `:PluginInstall` command in Vim.
+
+> If you don't need the whole content of the repository, you're able to take only some of the configuration files and
+> install only software by your choice.
 
 
 #### Notes

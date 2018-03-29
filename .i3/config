@@ -1,6 +1,13 @@
 # i3 config file (v4)
+# Kozalo's edition
 #
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# Complete reference: http://i3wm.org/docs/userguide.html
+#
+# Other web resources that I used:
+# - https://www.youtube.com/watch?v=8-S0cWnLBKg
+# - https://www.youtube.com/watch?v=ARKIwOlazKI
+# - https://github.com/bookercodes/dotfiles
+# - https://github.com/alnyan/dotfiles
 
 set $mod Mod4
 

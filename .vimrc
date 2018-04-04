@@ -58,7 +58,6 @@ Plugin 'mbbill/undotree'                    " Visualize undo-tree
 Plugin 'mattn/emmet-vim'                    " Allow the use of Emmet to write HTML
 Plugin 'udalov/kotlin-vim'                  " Support for the Kotlin language
 Plugin 'bkad/camelcasemotion'               " Allow to move between parts of upperCased words
-Plugin 'vim-syntastic/syntastic'
 
 " All of plugins must be added before the following line
 call vundle#end()
@@ -113,30 +112,10 @@ noremap <F6> :edit<CR>
 " Toggle spell checking on F7
 noremap <silent> <F7> :set spell!<CR>
 
-" Toggle a list of errors and warnings reported by syntax checkers and linters on F8
-" https://stackoverflow.com/a/17515778
-function! ToggleErrors()
-    let old_last_winnr = winnr('$')
-    lclose
-    if old_last_winnr == winnr('$')
-        " Nothing was closed, open syntastic error location panel
-        Errors
-    endif
-endfunction
-noremap <silent> <F8> :<C-u>call ToggleErrors()<CR>
-
-" Toggle menu with the history of a file with F9
-noremap <silent> <F9> :UndotreeToggle<CR>
+" Toggle menu with the history of a file with F8
+noremap <silent> <F8> :UndotreeToggle<CR>
 " Bind Ctrl+/ to comment toggling function
 nnoremap <silent> <C-_> :call NERDComment(0, "Toggle")<Enter>
-
-let g:syntastic_check_on_open=1    " Run syntax checkers when a file is being opened
-let g:syntastic_check_on_wq=0      " Skip on save before quit
-let g:syntastic_auto_jump=3        " Update the list of errors and jump to the first one, if any
-let g:syntastic_auto_loc_list=1    " Open/close the list of errors automatically
-" Move between errors via [l and ]l
-nnoremap <silent> [l :lprevious<CR>
-nnoremap <silent> ]l :lnext<CR>
 
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>

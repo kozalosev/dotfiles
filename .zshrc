@@ -46,6 +46,9 @@ HYPHEN_INSENSITIVE="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Make 'less' more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
 # Parameters for the "tmux" plugin.
 # ZSH_TMUX_AUTOSTART=true
 # ZSH_TMUX_FIXTERM=false

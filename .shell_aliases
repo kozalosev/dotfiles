@@ -2,16 +2,10 @@ alias ll='ls -Alh'
 alias la='ls -A'
 alias lr='ls -AlhR'
 
-alias v='vim'
 alias svim='sudo vim'
 
 # usage: ascii-video <video-file>
 alias ascii-video='CACA_DRIVER=ncurses mplayer -vo caca -quiet'
 
 alias :q='exit'
-alias psa='ps -ef'
-alias f='grep'
-
-bgtask() {
-    nohup "$1" &>/dev/null &
-}
+alias psg='ps -ef | grep'

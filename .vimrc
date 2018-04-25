@@ -19,7 +19,6 @@ set smartindent                 " Detect closing brackets
 set textwidth=120               " Make sure I don't write too much in a single line
 set colorcolumn=+0              " Draw a vertical line to illustrate the value of 'textwidth'
 set whichwrap+=<,>,h,l,[,]      " Make cursor jump to next line when reaching end of one
-set mouse=a                     " Automatically enable mouse usage
 set incsearch                   " Find as you type search
 set ignorecase                  " Enable case insensitive search...
 set smartcase                   " ...but only for lower-case strings

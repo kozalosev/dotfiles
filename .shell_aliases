@@ -2,6 +2,7 @@ alias ll='ls -Alh'
 alias la='ls -A'
 alias lr='ls -AlhR'
 
+alias sudo='sudo '      # make aliases available for sudo
 alias svim='sudo vim'
 
 # usage: ascii-video <video-file>
@@ -9,3 +10,6 @@ alias ascii-video='CACA_DRIVER=ncurses mplayer -vo caca -quiet'
 
 alias :q='exit'
 alias psg='ps -ef | grep'
+alias lssocks='lsof -i tcp'
+alias lsif='ip -s link'
+alias lswith='grep -rnw . -e'

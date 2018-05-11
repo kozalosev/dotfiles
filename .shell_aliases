@@ -1,3 +1,5 @@
+alias diff='diff -s'
+
 alias ll='ls -Alh'
 alias la='ls -A'
 alias lr='ls -AlhR'

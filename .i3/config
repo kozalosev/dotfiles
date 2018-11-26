@@ -234,7 +234,6 @@ bindsym --release $mod+Shift+Print exec --no-startup-id shutter -s
 
 ### Workspace assignments ###
 
-assign [class="Mate-terminal"] $ws_terminals
 assign [class="Chromium"] $ws_chromium
 assign [class="TelegramDesktop"] $ws_telegram
 
@@ -244,6 +243,7 @@ assign [class="jetbrains-pycharm"] $ws_ide
 assign [class="jetbrains-pycharm-ce"] $ws_ide
 assign [class="jetbrains-phpstorm"] $ws_ide
 assign [class="jetbrains-clion"] $ws_ide
+assign [class="jetbrains-datagrip"] $ws_ide
 
 assign [class="Sublime_text"] $ws_editors
 assign [class="Code"] $ws_editors

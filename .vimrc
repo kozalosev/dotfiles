@@ -58,6 +58,11 @@ Plugin 'mattn/emmet-vim'                    " Allow the use of Emmet to write HT
 Plugin 'udalov/kotlin-vim'                  " Support for the Kotlin language
 Plugin 'bkad/camelcasemotion'               " Allow to move between parts of upperCased words
 
+" Auto completion for Python. This plugin requires Jedi to be installed on your system.
+" In Debian, for example, Jedi is represented by two packages: 'python3-jedi' and 'python-jedi'.
+" It's also available as module 'jedi' on PyPI.
+"Plugin 'davidhalter/jedi-vim'
+
 " All of plugins must be added before the following line
 call vundle#end()
 
@@ -158,3 +163,8 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Restrict Emmet to only HTML and CSS files
 let g:user_emmet_install_global=0
 autocmd FileType html,css EmmetInstall
+
+" Disable auto completion since it may be very slow. Press Ctrl+Space to activate.
+"let g:jedi#popup_on_dot=0
+" Disable auto selection of the first element.
+"let g:jedi#popup_select_first=0

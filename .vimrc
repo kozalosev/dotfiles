@@ -168,3 +168,8 @@ autocmd FileType html,css EmmetInstall
 "let g:jedi#popup_on_dot=0
 " Disable auto selection of the first element.
 "let g:jedi#popup_select_first=0
+
+" use 2 spaces for indentation of YAML files
+autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab
+" use tabs for Makefiles
+autocmd FileType make set noexpandtab

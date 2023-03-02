@@ -156,5 +156,8 @@ alias zshconfig="vim ~/.zshrc"
 # Key bindings
 bindkey '^ ' autosuggest-accept
 
+# PATHs
+source ~/.profile
+
 # Aliases
 source ~/.shell_aliases

@@ -45,7 +45,7 @@ How to apply the configuration
 ------------------------------
 
 You can use the [KozConfigurator](https://bitbucket.org/Kozalo/kozconfigurator/) script to install all essential
-software and apply basic tweaks.
+software and apply basic tweaks. Another option is to use an [Ansible playbook](https://github.com/kozalosev/dotfiles-playbook).
 
 Unfortunately, _git_ doesn't allow us to clone the repository into a non-empty directory. There are at least 2 options
 how to circumvent this.

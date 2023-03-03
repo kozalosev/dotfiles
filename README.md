@@ -69,6 +69,9 @@ git clone --recursive https://github.com/kozalosev/dotfiles ~/tmp
 mv ~/tmp/.git ~/
 # Note that this command may overwrite your files!
 git reset --hard
+mv ~{/tmp,}/.vim/bundle/Vundle.vim
+mv ~{/tmp,}/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+mv ~{/tmp,}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 rm -rf ~/tmp
 ```
 

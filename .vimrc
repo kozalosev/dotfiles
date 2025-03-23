@@ -178,4 +178,3 @@ autocmd FileType html,css EmmetInstall
 autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab
 " use tabs for Makefiles
 autocmd FileType make set noexpandtab
-

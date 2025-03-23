@@ -1,4 +1,5 @@
 " Kozalo's Vim Configuration File
+
 " Web resources that I used as a reference (except the standard help system, of course):
 " - http://vim.wikia.com
 " - https://github.com/spf13/spf13-vim/blob/3.0/.vimrc
@@ -28,6 +29,8 @@ set nojoinspaces                " Prevents inserting two spaces after punctuatio
 set splitright                  " Puts new vsplit windows to the right of the current
 set splitbelow                  " Puts new split windows to the bottom of the current
 set history=1000                " Store a ton of history
+set encoding=utf-8              " Use UTF-8 to print characters in the terminal
+set fileencoding=utf-8          " Use UTF-8 as a file encoding
 
 " Uncomment if you want to redefine some parameters in local .vimrc files within your projects
 " set exrc
@@ -40,6 +43,7 @@ filetype off                    " Required for Vundle to work properly
 
 " Set the runtime path to include Vundle and initialize it
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/plugin/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'               " Plugin manager
@@ -57,6 +61,7 @@ Plugin 'mbbill/undotree'                    " Visualize undo-tree
 Plugin 'mattn/emmet-vim'                    " Allow the use of Emmet to write HTML
 Plugin 'udalov/kotlin-vim'                  " Support for the Kotlin language
 Plugin 'bkad/camelcasemotion'               " Allow to move between parts of upperCased words
+" Plugin 'Joorem/vim-haproxy'                 " Support of HAProxy configuration files
 
 " Auto completion for Python. This plugin requires Jedi to be installed on your system.
 " In Debian, for example, Jedi is represented by two packages: 'python3-jedi' and 'python-jedi'.
@@ -168,3 +173,9 @@ autocmd FileType html,css EmmetInstall
 "let g:jedi#popup_on_dot=0
 " Disable auto selection of the first element.
 "let g:jedi#popup_select_first=0
+
+" use 2 spaces for indentation of YAML files
+autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab
+" use tabs for Makefiles
+autocmd FileType make set noexpandtab
+

@@ -86,19 +86,20 @@ plugins=(
   # ssh-agent
   # per-directory-history
   # catimg
-  # encode64
+  encode64
 
   # Plugins that are not from oh-my-zsh
   zsh-syntax-highlighting
   zsh-autosuggestions
 
   # Containers and virtualization
-  # docker
+  docker
+  docker-compose
   # vagrant
 
   # Other software
   # sublime
-  # redis-cli
+  redis-cli
   # jira
 
 
